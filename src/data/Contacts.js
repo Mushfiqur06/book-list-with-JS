@@ -47,6 +47,11 @@ class Contacts {
         for(let i in changeContact){
             this.contactList[index][i] = changeContact[i];
         }
+
+        this.contactList[index] = {
+            ...this.contactList[index],
+            changeContact
+        }
     }
 }
 
