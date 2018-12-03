@@ -1,3 +1,3 @@
-import Contact from './Contact';
-import Contacts from './Contacts';
+import Contact from './data/Contact';
+import Contacts from './data/Contacts';
 
