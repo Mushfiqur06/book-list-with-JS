@@ -5,8 +5,10 @@ export default function input(props){
         case 'INPUT':
             inp = document.createElement('input');
             inp.type = 'text';
+            inp.name = props.attr.name;
             inp.placeholder = props.attr.placeholder;
-            inp.className = props.attr.className 
+            inp.className = props.attr.className;
+            inp.required = props.attr.required
             return inp;
         case 'SELECT':
             inp = document.createElement('select');
@@ -23,12 +25,12 @@ export default function input(props){
             return inp;
         case 'CHECKBOX': 
             let label = document.createElement('label');
-            label.for = props.attr.id;
+            label.setAttribute('for', props.attr.id)
             label.innerHTML = props.attr.label;
             
             let input = document.createElement('input');
             input.type = 'checkbox'
-            input.value = props.attr.value;
+            input.name = props.attr.name;
             input.id = props.attr.id;
 
             inp = document.createElement('div');
