@@ -24,5 +24,9 @@ export default function contactItem(props){
     li.append(avatar);
     li.append(groupDiv);
 
+    li.onclick = function(){
+        this.remove()
+    }
+
     return li;
 }
