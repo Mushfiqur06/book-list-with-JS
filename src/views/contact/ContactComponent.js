@@ -12,7 +12,8 @@ export default function ContactsComponent(props){
             avatar: contact.name.charAt(0).toUpperCase()
         })
 
-        ul.appendChild(item)
+        // ul.appendChild(item)
+        console.log(item)
     })
 
     return ul;
